@@ -10,6 +10,7 @@ const typeDefs = gql`
     aboutAlejandroGiron: String
     aboutDavidOrdoñez: String
     aboutJuanCamilo: String
+    aboutJavierGrijalba: String
   }
 `;
 
@@ -32,7 +33,10 @@ const resolvers = {
     },  
     aboutJuanCamilo: ()=>{
       return `Soy juan camilo . Me gusta la tecnologia. ademas, tambien me gusta ir a entrenar al gym`;
-    }
+    },
+    aboutJavierGrijalba: () => {
+      return `Hola, soy Javier Grijalba. Me gustan los colores y las nubes.`;
+    }, 
   },
 };
 
