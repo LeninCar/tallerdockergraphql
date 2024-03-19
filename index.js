@@ -7,6 +7,7 @@ const typeDefs = gql`
   type Query {
     hello(message: String!): String
     aboutLeninCarabali: String
+    aboutAlejandroGiron: String
   }
 `;
 
@@ -19,6 +20,10 @@ const resolvers = {
     aboutLeninCarabali: () => {
         return `Soy Lenin Carabali. Me gusta mucho leer sobre distopías; Rebelión en la granja fue
         la última que me leí. En su momento quise estudiar filosofía.`;
+      },
+      aboutAlejandroGiron: () => {
+        return `Hola, Soy Alejandro Giron, me gusta la programación y jugar Lolsito en mis tiempos libres,
+        en este momento estoy enfocado en aprender nuevos lenguajes de programación.`;
       },
   },
 };
@@ -51,4 +56,3 @@ async function startApolloServer() {
 }
 
 startApolloServer();
-
