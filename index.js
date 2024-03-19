@@ -12,6 +12,7 @@ const typeDefs = gql`
     aboutJuanCamilo: String
     aboutJavierGrijalba: String
     aboutJuanSilva: String
+    aboutJuanPabloMarin: String
   }
 `;
 
@@ -40,6 +41,9 @@ const resolvers = {
     }, 
     aboutJuanSilva: () => {
       return `Hola, soy Juan Camilo Silva. Me gustan los deportes y la musica.`;
+    },
+    aboutJuanPabloMarin: () => {
+      return `Hola, soy Juan Pablo Marin. Me gusta el Ajedrez, el futbol y la programacion.`;
     }
   },
 };
