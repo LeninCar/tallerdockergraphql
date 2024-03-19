@@ -9,6 +9,7 @@ const typeDefs = gql`
     aboutLeninCarabali: String
     aboutAlejandroGiron: String
     aboutDavidOrdoñez: String
+    aboutJuanCamilo: String
   }
 `;
 
@@ -29,6 +30,9 @@ const resolvers = {
     aboutDavidOrdoñez: () => {
       return `Soy David Camilo Ordoñez Marin. Me gustan las artes marciales tanto verlas como practicarlas y tambien me gustan los cubos rubik.`;
     },  
+    aboutJuanCamilo: ()=>{
+      return `Soy juan camilo . Me gusta la tecnologia. ademas, tambien me gusta ir a entrenar al gym`;
+    }
   },
 };
 
