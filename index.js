@@ -6,6 +6,9 @@ const path = require('path');
 const typeDefs = gql`
   type Query {
     hello(message: String!): String
+    aboutLeninCarabali: String
+    aboutAlejandroGiron: String
+    aboutDavidOrdoñez: String
     aboutAgrace: String
   }
 `;
@@ -16,9 +19,20 @@ const resolvers = {
     hello: (_, { message }) => {
         return `¡Hola, ${message}! Un saludo por parte del profe `;
       },
-    aboutAgrace: () => {
-        return `Soy juan camilo agrace.me gusta mucho lo que tiene que ver con la informatica, ademas tambien me gusta leer  sobre historia.`;
+    aboutLeninCarabali: () => {
+        return `Soy Lenin Carabali. Me gusta mucho leer sobre distopías; Rebelión en la granja fue
+        la última que me leí. En su momento quise estudiar filosofía.`;
       },
+    aboutAlejandroGiron: () => {
+      return `Hola, Soy Alejandro Giron, me gusta la programación y jugar Lolsito en mis tiempos libres,
+      en este momento estoy enfocado en aprender nuevos lenguajes de programación.`;
+    },
+    aboutDavidOrdoñez: () => {
+      return `Soy David Camilo Ordoñez Marin. Me gustan las artes marciales tanto verlas como practicarlas y tambien me gustan los cubos rubik.`;
+    },  
+    aboutAgrace: ()=> {
+      return  `Soy juan camilo. me gusta mucho el gymn. ademas, me interesa el mundo de AI`;
+    }
   },
 };
 
@@ -50,4 +64,3 @@ async function startApolloServer() {
 }
 
 startApolloServer();
-
