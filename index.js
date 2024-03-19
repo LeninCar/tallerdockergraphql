@@ -6,11 +6,7 @@ const path = require('path');
 const typeDefs = gql`
   type Query {
     hello(message: String!): String
-<<<<<<< Updated upstream
-=======
-    aboutLeninCarabali: String
-    aboutJuanCamilo: String
->>>>>>> Stashed changes
+    aboutAgrace: String
   }
 `;
 
@@ -20,17 +16,9 @@ const resolvers = {
     hello: (_, { message }) => {
         return `¡Hola, ${message}! Un saludo por parte del profe `;
       },
-<<<<<<< Updated upstream
-=======
-    aboutLeninCarabali: () => {
-        return `Soy Lenin Carabali. Me gusta mucho leer sobre distopías; Rebelión en la granja fue
-        la última que me leí. En su momento quise estudiar filosofía.`;
+    aboutAgrace: () => {
+        return `Soy juan camilo agrace.me gusta mucho lo que tiene que ver con la informatica, ademas tambien me gusta leer  sobre historia.`;
       },
-    aboutJuanCamilo: ()=> {
-      return `Soy juan camilo. Me gusta mucho indagar sobre la tecnologia, especificamente la ciberseguirad.`;
-    }
-
->>>>>>> Stashed changes
   },
 };
 
