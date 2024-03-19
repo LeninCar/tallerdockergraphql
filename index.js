@@ -8,7 +8,7 @@ const typeDefs = gql`
     hello(message: String!): String
     aboutLeninCarabali: String
     aboutAlejandroGiron: String
-    aboutDavidOrdoñez: String
+    aboutDavidOrdonez: String
     aboutJuanCamilo: String
     aboutJavierGrijalba: String
     aboutJuanSilva: String
@@ -30,7 +30,7 @@ const resolvers = {
       return `Hola, Soy Alejandro Giron, me gusta la programación y jugar Lolsito en mis tiempos libres,
       en este momento estoy enfocado en aprender nuevos lenguajes de programación.`;
     },
-    aboutDavidOrdoñez: () => {
+    aboutDavidOrdonez: () => {
       return `Soy David Camilo Ordoñez Marin. Me gustan las artes marciales tanto verlas como practicarlas y tambien me gustan los cubos rubik.`;
     },  
     aboutJuanCamilo: ()=>{
