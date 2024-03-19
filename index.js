@@ -8,6 +8,7 @@ const typeDefs = gql`
     hello(message: String!): String
     aboutLeninCarabali: String
     aboutAlejandroGiron: String
+    aboutDavidOrdoñez: String
   }
 `;
 
@@ -21,10 +22,13 @@ const resolvers = {
         return `Soy Lenin Carabali. Me gusta mucho leer sobre distopías; Rebelión en la granja fue
         la última que me leí. En su momento quise estudiar filosofía.`;
       },
-      aboutAlejandroGiron: () => {
-        return `Hola, Soy Alejandro Giron, me gusta la programación y jugar Lolsito en mis tiempos libres,
-        en este momento estoy enfocado en aprender nuevos lenguajes de programación.`;
-      },
+    aboutAlejandroGiron: () => {
+      return `Hola, Soy Alejandro Giron, me gusta la programación y jugar Lolsito en mis tiempos libres,
+      en este momento estoy enfocado en aprender nuevos lenguajes de programación.`;
+    },
+    aboutDavidOrdoñez: () => {
+      return `Soy David Camilo Ordoñez Marin. Me gustan las artes marciales tanto verlas como practicarlas y tambien me gustan los cubos rubik.`;
+    },  
   },
 };
 
