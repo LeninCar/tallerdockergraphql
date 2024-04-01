@@ -10,9 +10,10 @@ const typeDefs = gql`
     aboutAlejandroGiron: String
     aboutDavidOrdonez: String
     aboutJuanCamilo: String
-    aboutJavierGrijalba: String
+    aboutJavierGrijalba: String 
     aboutJuanSilva: String
     aboutJuanPabloMarin: String
+    aboutLuisRodriguez: String
   }
 `;
 
@@ -44,6 +45,9 @@ const resolvers = {
     },
     aboutJuanPabloMarin: () => {
       return `Hola, soy Juan Pablo Marin. Me gusta el Ajedrez, el futbol y la programacion.`;
+    },
+    aboutLuisRodriguez: () => {
+      return `Hola, soy Luis Gabriel Rodriguez. Me gusta el armwrestling y el basquet.`;
     }
   },
 };
